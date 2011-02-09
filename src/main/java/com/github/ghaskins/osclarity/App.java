@@ -9,10 +9,10 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.getProperties().list(System.out);
+    	OsInfo osinfo = OsInfoFactory.getInfo();
 
-        Clarify.process();
-        
-        System.getProperties().list(System.out);
+    	System.out.println("Name: " + osinfo.getName() +
+    						" Version: " + osinfo.getVersion() +
+    						" Arch: " + osinfo.getArch());
     }
 }
