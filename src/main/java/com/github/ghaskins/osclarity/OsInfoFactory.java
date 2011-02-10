@@ -3,7 +3,7 @@ package com.github.ghaskins.osclarity;
 import java.util.Properties;
 
 public class OsInfoFactory {
-	static public OsInfo getInfo()  {
+	static public OsInfo create()  {
 		OsInfo osinfo = new OsInfo();
 		
 		Properties props = System.getProperties();
